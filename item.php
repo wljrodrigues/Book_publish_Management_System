@@ -3,7 +3,8 @@ include('header.php');
 include_once('conn.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 
 <head>
     <style>
@@ -15,6 +16,23 @@ include_once('conn.php');
         input[type=number]::-webkit-outer-spin-button {
 
             opacity: 1;
+
+        }
+
+        .download-button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        }
+
+        .download-button a {
+        color: #ffffff; /* White */
+        font-weight: bold; /* Add bold */
 
         }
     </style>
@@ -45,29 +63,30 @@ include_once('conn.php');
             $pdts = $result->fetch_assoc();
 
         ?>
-            <form action="" method="post">
-                <div class="card" style="background-color:#EFEDF2">
-                    <div class="row">
-                        <div class="card-body">
-                        <div class="col-md-12">
-                            <center>
-                                <img class="card-img-top pt-2" style="height: 200px; width:150px" src="<?php echo $pdts["bookImage"] ?>" alt="Card image cap">
-                                <div class="card-body pt-1">
-                                    <p><b><?php echo $pdts["bookName"] ?></b></p>
-                                    <p>Year: <?php echo $pdts["bookPublishyear"] ?><b> | </b><?php echo $pdts["bookLanguage"] ?><b> | </b>Pages: <?php echo $pdts["bookPages"] ?></p>
-                                    <p>Size: <?php echo $pdts["bookSize"] ?>MB</p>
-                                    <input type="submit" name="download" class="btn btn-success" value="Download" disabled>
-
-                                </div>
-                            </center>
+            
+<form action="download.php" method="post">
+    <div class="card" style="background-color:#EFEDF2">
+        <div class="row">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <center>
+                        <img class="card-img-top pt-2" style="height: 200px; width:150px" src="<?php echo $pdts["bookImage"] ?>" alt="Card image cap">
+                        <div class="card-body pt-1">
+                            <p><b><?php echo $pdts["bookName"] ?></b></p>
+                            <p>Year: <?php echo $pdts["bookPublishyear"] ?><b> | </b><?php echo $pdts["bookLanguage"] ?><b> | </b>Pages: <?php echo $pdts["bookPages"] ?></p>
+                            <p>Size: <?php echo $pdts["bookSize"] ?>MB</p>
+                            
+                            <button class="download-button">
+                            <a href="<?php echo $pdts["bookPdf"] ?>" download>Download</a>
+                            </button>
+                           
                         </div>
-
-                        
-                        </div>
-                    </div>
+                    </center>
                 </div>
-            </form>
-
+            </div>
+        </div>
+    </div>
+</form>
             <div id="accordion" class="mt-2" align="left">
                 <div class="card">
                     <div class="card-header" align="center">

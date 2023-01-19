@@ -1,6 +1,6 @@
 <?php include('admin.php'); ?>
 
-
+<html lang="pt-BR">
 
 
 <ul class="breadcrumb">
@@ -16,7 +16,7 @@
 
 
 	<div>
-		<h1>Manage Proposals</h1>
+		<h1>Gerenciamento de Proposta</h1>
 
 
 	</div>
@@ -27,11 +27,11 @@
 			<div class="table-responsive dt-responsive">
 				<table class="table table-striped table-bordered nowrap">
 					<thead>
-						<th>Proposal Id</th>
-						<th>Proposal Name</th>
-						<th>Proposal Email</th>
-						<th>Proposal Number</th>
-						<th>Comment</th>
+						<th>Proposta Id</th>
+						<th>Proposta Nome</th>
+						<th>Proposta E-mail</th>
+						<th>Número da proposta</th>
+						<th>Comentários</th>
 
 
 						<th></th>
@@ -44,9 +44,9 @@
 						?>
 							<tr>
 								<td><?php echo $row['proposalId']; ?></td>
-								<td><?php echo $row['proposalName']; ?></td>
-								<td><?php echo $row['proposalEmail']; ?></td>
-								<td><?php echo $row['proposalNumber']; ?></td>
+								<td><?php echo $row['ProposalName']; ?></td>
+								<td><?php echo $row['ProposalEmail']; ?></td>
+								<td><?php echo $row['ProposalNumber']; ?></td>
 								<td><?php echo $row['comment']; ?></td>
 
 

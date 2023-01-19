@@ -1,6 +1,6 @@
 <?php include('admin.php'); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 
@@ -11,14 +11,14 @@
 
     <ul class="breadcrumb">
       <li class="breadcrumb-item"><a href="adminhome.php">Home</a></li>
-      <li class="breadcrumb-item"><a href="Addbook.php">Book</a></li>
+      <li class="breadcrumb-item"><a href="Addbook.php">Livro</a></li>
 
     </ul>
   </div>
   <br>
   <div class="card">
     <div class="card-header">
-      <h3>Book Information</h3>
+      <h3>Dados do livro</h3>
     </div>
     <form action="AddBookBackend.php" method="post" enctype="multipart/form-data">
 
@@ -36,6 +36,7 @@
               <div class="col-sm-3"><input type="text" class="form-control" name="BookAuthor" placeholder="Enter Book Author"></div>
               <div class="col-sm-3"><input type="Number" pattern="/d{4}" class="form-control" name="BookPublishYear" placeholder="Enter Book Publish Year"></div>
               <div class="col-sm-3"> <input type="file" class="form-control" name="BookImage" id="BookImage" required> </div>
+              <div class="col-sm-3"> <input type="file" class="form-control" name="BookPdf" id="BookPdf" required> </div>
               <div class="col-sm-3"> <input type="text" class="form-control" name="BookCategoryID" placeholder="CategoryID" required> </div>
 
 

@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
   $password = $_POST['pwd'];
   $username = mysqli_real_escape_string($conn, $username);
   $password = mysqli_real_escape_string($conn, $password);
-  $sql = "SELECT * FROM users WHERE userEmail='$username' AND userPassword='$password' AND userEmailStatus='active'";
+  $sql = "SELECT * FROM users WHERE userEmail='$username' AND userPassword='$password'";
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
@@ -82,7 +82,7 @@ if (isset($_POST['submit'])) {
     </div>
     <div class="container bg-light mt-5 mb-5" style="height:38rem; padding:40px; border-radius:25px;">
       <!--here we can set height and padding of container.-->
-      <h2><strong><u>Login Form</u></strong></h2>
+      <h2><strong><u>Login</u></strong></h2>
       <hr>
       <div>
         <p class="bg-success text-white px-4">
@@ -108,10 +108,10 @@ if (isset($_POST['submit'])) {
           <div class="invalid-feedback">Please enter valid Email.</div>
         </div>
         <div class="form-group">
-          <label for="pwd">Password:</label>
+          <label for="pwd">Senha:</label>
           <input type="password" class="form-control" id="pwd" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*,.]{8,15}$" placeholder="Enter password" name="pwd" required>
-          <small>Password must have 7 to 15 characters which contain at least one numeric digit and a special character.</small>
-          <div><small><input type="checkbox" onclick="myFunction()"> <label> Show Password</label></small></div>
+          <small>A senha deve ter de 7 a 15 caracteres que contenham pelo menos um dígito numérico e um caractere especial.</small>
+          <div><small><input type="checkbox" onclick="myFunction()"> <label> Mostrar senha</label></small></div>
 
           <script>
             function myFunction() {
@@ -127,7 +127,7 @@ if (isset($_POST['submit'])) {
           <div class="invalid-feedback">Please enter valid Password.</div>
         </div>
         
-        <button type="submit" name="submit" class="btn btn-primary">Submit</button> <small>New Customer...? <a href="signup.php">Click here </a>to register yourself</small>
+        <button type="submit" name="submit" class="btn btn-primary">Submeter</button> <small>Novo usuário...? <a href="signup.php">Clique aqui </a>para registrar um conta.</small>
         <br>
         <small><a href="forgot.php">Forgot Password</a></small>
       </form>

@@ -3,7 +3,7 @@ include('admin.php'); ?>
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 
@@ -20,7 +20,7 @@ include('admin.php'); ?>
 	<div class="main">
 		<ul class="breadcrumb">
 			<li class="breadcrumb-item"><a href="adminhome.php">Home</a></li>
-			<li class="breadcrumb-item"><a href="AdminManageUser.php">Customer</a></li>
+			<li class="breadcrumb-item"><a href="AdminManageUser.php">Usuários</a></li>
 
 		</ul>
 	</div>
@@ -28,7 +28,7 @@ include('admin.php'); ?>
 	<a href="AddUsers.php"><button class="btn btn-primary pull-right">+ Add New</button></a>
 	<div class="col-sm-12" style="background-color:lavender;" align="center">
 		<div>
-			<h1>Manage Users</h1>
+			<h1>Gerenciar Usuários</h1>
 
 		</div>
 		<br>

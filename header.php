@@ -1,9 +1,9 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <title>Library Management</title>
+    <title>Livraria</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -125,7 +125,7 @@
         <!-- Brand -->
         <!-- <div class="row"> -->
         <a class="navbar-brand" href="index.php">
-            <h4><i class="fas fa-book-reader"></i> Library Management</h4>
+            <h4><i class="fas fa-book-reader"></i> Livraria</h4>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -138,29 +138,29 @@
                     <a class="nav-link active" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact Us</a>
+                    <a class="nav-link" href="contact.php">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="event.php">Events</a>
+                    <a class="nav-link" href="event.php">Eventos</a>
                 </li>
 
                 <!-- Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" style="cursor: pointer;" onclick="window.location='books.php'" id="navbardrop" data-toggle="dropdown">
-                        Books
+                        Livros
                     </a>
                     <div class="dropdown-menu mt-0 bg-primary">
-                        <a class="dropdown-item" href="books.php?bookCategoryId=1"><strong>Environment</strong></a>
+                        <a class="dropdown-item" href="books.php?bookCategoryId=1"><strong>Tematica 1</strong></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="books.php?bookCategoryId=2"><strong>Biology</strong></a>
+                        <a class="dropdown-item" href="books.php?bookCategoryId=2"><strong>Tematica 2</strong></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="books.php?bookCategoryId=3"><strong>Mathematics</strong></a>
+                        <a class="dropdown-item" href="books.php?bookCategoryId=3"><strong>Tematica 3s</strong></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="books.php?bookCategoryId=4"><strong>Computer</strong></a>
+                        <a class="dropdown-item" href="books.php?bookCategoryId=4"><strong>Tematica 4</strong></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="books.php?bookCategoryId=5"><strong>Physics</strong></a>
+                        <a class="dropdown-item" href="books.php?bookCategoryId=5"><strong>Tematica 5</strong></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="books.php?bookCategoryId=6"><strong>Chemistry</strong></a>
+                        <a class="dropdown-item" href="books.php?bookCategoryId=6"><strong>Tematica 6</strong></a>
                     </div>
                 </li>
 
@@ -179,14 +179,14 @@
                     <?php if (isset($_SESSION['email'])) { ?>
                         <a class="nav-link" id="trial" href="profile.php"><i class="fas fa-user-circle"></i> <?php echo $_SESSION['name'] ?></a>
                     <?php } else { ?>
-                        <a class="nav-link" href="signup.php"><i class="fas fa-user-edit"></i> Sign Up</a>
+                        <a class="nav-link" href="signup.php"><i class="fas fa-user-edit"></i> Cadastre-se</a>
                     <?php } ?>
                 </li>
                 <li class="nav-item">
                     <?php if (isset($_SESSION['email'])) { ?>
-                        <a class="nav-link" href="logout.php"><i class="fa fa-sign-out-alt"></i> Sign out</a>
+                        <a class="nav-link" href="logout.php"><i class="fa fa-sign-out-alt"></i> Sair</a>
                     <?php } else { ?>
-                        <a class="nav-link" href="login.php"><i class="fa fa-sign-in-alt"></i> Sign in</a>
+                        <a class="nav-link" href="login.php"><i class="fa fa-sign-in-alt"></i> Entrar</a>
                     <?php } ?>
                 </li>
 

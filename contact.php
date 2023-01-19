@@ -17,7 +17,7 @@ if (isset($_POST['signup'])) {
   if ($query) {
 ?>
     <script>
-      alert('Thank you for your Feedback');
+      alert('Obrigado pela sua mensagem. Responderemos em breve');
 
       location.replace("index.php");
     </script>
@@ -38,10 +38,10 @@ if (isset($_POST['signup'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <title>CONTACT US</title>
+  <title>CONTATO</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -65,10 +65,10 @@ if (isset($_POST['signup'])) {
 <body style="background-color: lightgray;">
   <div class="container-fluid path">
     <a href="index.php">Home</a> <label for="" class="less">></label>
-    <a href="contact.php">Contact US</a>
+    <a href="contact.php">Contato</a>
   </div>
   <div class="container bg-light mt-5 mb-5" style="height:40rem; padding:40px; border-radius:25px;">
-    <h2><strong><u>Contact Us</u></strong></h2>
+    <h2><strong><u>Entre em contato</u></strong></h2>
     <hr>
     <form action="" method="POST" class="needs-validation" novalidate>
       <div class="form-group">
@@ -91,7 +91,7 @@ if (isset($_POST['signup'])) {
         <div class="invalid-feedback">Please enter valid Input.</div>
       </div>
 
-      <button type="submit" class="btn btn-primary" name="signup" value="Submit">Submit</button>
+      <button type="submit" class="btn btn-primary" name="signup" value="Submit">Enviar</button>
     </form>
   </div>
   <?php include('footer.php'); ?>

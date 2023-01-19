@@ -15,7 +15,7 @@ $pwd=$_POST['pwd'];
 	 
 if(mysqli_query($conn,$sql))
 {
-echo '<script>alert("Registered SuccessFull!"); window.location.href="AdminManageUser.php";</script>';
+echo '<script>alert("Registrado com sucesso!"); window.location.href="AdminManageUser.php";</script>';
 	
 }
 else

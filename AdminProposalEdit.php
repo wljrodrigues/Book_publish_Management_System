@@ -1,7 +1,7 @@
 <?php include('admin.php');?>
 
 
-<html lang="en">
+<html lang="pt-BR">
 <head>
   
   
@@ -44,9 +44,9 @@ if(isset($_POST['Update'])) // when click on Update button
 
 
 <form method="POST">
-  <input type="text" name="proposalName" value="<?php echo $row['proposalName'] ?>" placeholder="Enter Proposal Name" Required>
-  <input type="email" name="proposalEmail" value="<?php echo $row['proposalEmail'] ?>" placeholder="Enter proposal Email" Required>
-  <input type="text" name="proposalNumber" pattern="^\d{10}$" value="<?php echo $row['proposalNumber'] ?>" placeholder="Enter phone number" Required>
+  <input type="text" name="proposalName" value="<?php echo $row['ProposalName'] ?>" placeholder="Enter Proposal Name" Required>
+  <input type="email" name="proposalEmail" value="<?php echo $row['ProposalEmail'] ?>" placeholder="Enter proposal Email" Required>
+  <input type="text" name="proposalNumber" pattern="^\d{10}$" value="<?php echo $row['ProposalNumber'] ?>" placeholder="Enter phone number" Required>
   <input type="text" name="comment" value="<?php echo $row['comment'] ?>" placeholder="Enter comment" Required>
 
   <input type="submit" name="Update" value="Update">

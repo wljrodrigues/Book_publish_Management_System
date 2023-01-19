@@ -1,6 +1,6 @@
 <?php include('admin.php'); ?>
 
-
+<html lang="pt-BR">
 
 
 <ul class="breadcrumb">
@@ -15,7 +15,7 @@
 
 
     <div>
-        <h1>Manage Contact us</h1>
+        <h1>Gerenciar Mensagens</h1>
 
 
     </div>
@@ -50,7 +50,7 @@
 
 
                                 <td>
-                                    <a href="AdminDeleteContact.php?Id=<?php echo $row['contactId']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure to delete this record?')">Delete</a>
+                                    <a href="AdminDeleteContact.php?Id=<?php echo $row['contactId']; ?>" class="btn btn-danger" onclick="return confirm('Você deseja apagar permanentemente?')">Apagar</a>
                                 </td>
                             </tr>
                         <?php

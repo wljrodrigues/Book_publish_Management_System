@@ -1,6 +1,6 @@
 <?php include('admin.php'); ?>
 
-
+<html lang="pt-BR">
 
 
 <ul class="breadcrumb">

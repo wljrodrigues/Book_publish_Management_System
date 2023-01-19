@@ -1,6 +1,6 @@
 <?php include('admin.php'); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 
@@ -11,7 +11,7 @@
       <div class="card">
         <ul class="breadcrumb">
           <li class="breadcrumb-item"><a href="adminhome.php">Home</a></li>
-          <li class="breadcrumb-item"><a href="AddUsers.php">Customer</a></li>
+          <li class="breadcrumb-item"><a href="AddUsers.php">Usuários</a></li>
         </ul>
       </div>
 

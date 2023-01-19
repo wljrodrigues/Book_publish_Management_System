@@ -40,6 +40,15 @@ if(isset($_POST["submit"])) {
 	  echo "File is not an image.";
 	  $uploadOk = 0;
 	}
+
+	$check = getimagesize($_FILES["BookPdf"]["tmp_name"]);
+	if($check !== false) {
+	  echo "File is an Pdf - " . $check["mime"] . ".";
+	  $uploadOk = 1;
+	} else {
+	  echo "File is not an image.";
+	  $uploadOk = 0;
+	}
   }
 if ($uploadOk == 0) {
 	echo "Sorry, your file was not uploaded.";
@@ -54,7 +63,7 @@ if ($uploadOk == 0) {
   }
 
     
-	$query=mysqli_query($conn," UPDATE  `books` SET BookName='$BookName', BookPrice='$BookPrice',BookPages='$BookPages',BookSize='$BookSize',BookLanguage='$BookLanguage',BookShortDesc='$BookShortDesc',BookAuthor='$BookAuthor',BookPublishyear='$BookPublishyear',BookImage='$BookImage', BookCategoryID='$BookCategoryID'  WHERE BookID='$id'");
+	$query=mysqli_query($conn," UPDATE  `books` SET bookName='$BookName', bookPrice='$BookPrice',bookPages='$BookPages',bookSize='$BookSize',bookLanguage='$BookLanguage',bookShortDesc='$BookShortDesc',bookAuthor='$BookAuthor',bookPublishyear='$BookPublishyear',bookImage='$BookImage', bookPdf='$BookPdf', bookCategoryID='$BookCategoryID'  WHERE BookID='$id'");
 	if($query){
 		echo '<script>window.location.href = "AdminManageBook.php";</script>';  
 
@@ -79,6 +88,7 @@ if ($uploadOk == 0) {
   <input type="text" name="BookAuthor" value="<?php echo $row['bookAuthor'] ?>" placeholder="Enter Author" >
   <input type="number" name="BookPublishyear" value="<?php echo $row['bookPublishyear'] ?>" placeholder="Enter Publish Year" >
   <input type="file" name="BookImage" value="<?php echo $row['bookImage'] ?>" required>
+  <input type="file" name="BookPdf" value="<?php echo $row['bookPdf'] ?>" required>
   <input type="number" name="BookCategoryID" value="<?php echo $row['bookCategoryId'] ?>" placeholder="Enter Ctegory ID" >
   
   <input type="submit" name="Update" value="Update">

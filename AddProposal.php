@@ -1,6 +1,6 @@
 <?php include('admin.php'); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -16,13 +16,13 @@
       <div class="card">
         <ul class="breadcrumb">
           <li class="breadcrumb-item"><a href="adminhome.php">Home</a></li>
-          <li class="breadcrumb-item"><a href="AddProposal.php">Vendor</a></li>
+          <li class="breadcrumb-item"><a href="AddProposal.php">Autor</a></li>
 
         </ul>
       </div>
 
       <div class="card-header">
-        <h3>Proposal Information
+        <h3>Dados da proposta
       </div>
       <form action="AddProposalBackend.php" method="post">
 

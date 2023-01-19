@@ -3,7 +3,7 @@ include('header.php');
 include('conn.php');
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <script>
@@ -48,6 +48,7 @@ include('conn.php');
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       margin: 8px;
       font-family: Arial, Helvetica, sans-serif;
+     
 
     }
 
@@ -71,6 +72,7 @@ include('conn.php');
 
     .title {
       color: grey;
+      text-align: center;
     }
 
     .button {
@@ -123,10 +125,10 @@ include('conn.php');
   $result = mysqli_query($conn, $sql);
   ?>
   <div class="container-fluid path">
-    <a href="index.php">Home</a> <label for="" class="less">></label>
-    <a href="books.php?bookCategoryId=<?= $CategoryId ?>">books</a>
+    <a href="index.php">Home</a> <label for="" class="less"></label>
+    <!--<a href="books.php?bookCategoryId=<?= $CategoryId ?>">Livros</a> -->
   </div>
-  <h2 style="text-align:center">BOOKS</h2>
+  <h2 style="text-align:center">LIVROS</h2>
   <div id="items" class="container-fluid" style=" display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1.1fr)); gap: 1em; align-items:stretch; ">
     <?php
     if (!$result) {
@@ -145,7 +147,7 @@ include('conn.php');
               <div class="row" style="line-height: 0.9;">
                 <p><small><b><?php echo $pdts["bookName"] ?></b></small></p>
               </div>
-                <p><small>Year: <?php echo $pdts["bookPublishyear"] ?><b> | </b><?php echo $pdts["bookLanguage"] ?><b> | </b>Pages: <?php echo $pdts["bookPages"] ?></small></p>
+                <p><small>Ano: <?php echo $pdts["bookPublishyear"] ?><b> | </b><?php echo $pdts["bookLanguage"] ?><b> | </b>Páginas: <?php echo $pdts["bookPages"] ?></small></p>
               
             </div>
           </center>

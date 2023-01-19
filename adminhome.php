@@ -2,14 +2,14 @@
 include "admin.php";
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 <head>
 </head>
 
 <body>
-        <h1 align="center"  style="margin: 10px;  margin-top:3%; margin-bottom:3%; "><strong>Total Record Summary</strong></h1>
+        <h1 align="center"  style="margin: 10px;  margin-top:3%; margin-bottom:3%; "><strong>Painel de controle</strong></h1>
         <?php
         include "conn.php";
         $sqlusers = "select userId from users";
@@ -36,7 +36,7 @@ include "admin.php";
                     <!-- <img class="card-img-top " style=" width:100px" src="./img/generaluser.png" alt="Card image cap"> -->
                     <i class="fa fa-user-circle-o fa-5x" aria-hidden="true" ></i>
                     <div class="card-body">
-                            <h3><b>Users</b></h3>
+                            <h3><b>Usuários</b></h3>
                         <h1><strong><?php echo $totalusers; ?></strong> </h1>
 
                     </div>
@@ -46,7 +46,7 @@ include "admin.php";
                 <center>
                 <i class="fa fa-book fa-5x" aria-hidden="true"></i>              
                     <div class="card-body pt-1">
-                    <h3><b>Books</b></h3>
+                    <h3><b>Livros</b></h3>
                         <h1><strong><?php echo $totalbooks; ?></strong> </h1>
 
                     </div>
@@ -56,7 +56,7 @@ include "admin.php";
                 <center>
                 <i class="fa fa-registered fa-5x" aria-hidden="true"></i>              
                 <div class="card-body pt-1">
-                    <h3><b>Requests</b></h3>
+                    <h3><b>Propostas</b></h3>
                         <h1><strong><?php echo $totalrequests; ?></strong> </h1>
 
                     </div>
@@ -66,7 +66,7 @@ include "admin.php";
                 <center>
                 <i class="fa fa-calendar fa-5x" aria-hidden="true"></i>
                     <div class="card-body pt-1">
-                    <h3><b>Events</b></h3>
+                    <h3><b>Eventos</b></h3>
                         <h1><strong><?php echo $totalevents; ?></strong> </h1>
 
                     </div>

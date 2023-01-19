@@ -2,7 +2,7 @@
 // session_start();
 include('header.php'); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <title>Home</title>
@@ -62,7 +62,7 @@ include('header.php'); ?>
       <?php
       if (isset($_SESSION['email'])) {
       ?>
-        <h3><strong>Welcome
+        <h3><strong>Bem vindos
             <!--#display doner's name using session --><span style="text-transform: uppercase;"><?php echo $_SESSION['name']; ?></span>
           </strong></h3>
       <?php
@@ -82,14 +82,14 @@ include('header.php'); ?>
       <img src="./img/c_1.jpg" height="330px" width="500px">
     </div>
     <div class="col-7">
-      <h4>Dear Readers, we hearty welcome you all to the place where you can find every book that you want. We deliver you books from physics, Chemistry, Biology, IT, Computer Science, Law, Medical, Engeneering, Social Work, Sociology, Psychology, Novels... every field, you say and we have. Here on this platform, we provide facility to download available books for absolutely free. We frequently update our library with latest books.
-      Our goal is to ease the supply and availability of books for our readers and students.
-      Let's make the knowledge and education free and easily accessible to everyone.</h4>
+      <h4>Caros leitores, damos as boas-vindas a todos vocês ao lugar onde vocês podem encontrar todos os livros que quiserem. 
+        Entregamos livros de física, química, biologia, TI, Ciência da Computação, Direito, Medicina, Engenharia, Serviço Social, 
+        Sociologia, Psicologia, Romances... cada campo, você diz e nós temos. Aqui nesta plataforma, nós fornecemos facilidade para baixar livros disponíveis de forma absolutamente gratuita. Atualizamos frequentemente nossa biblioteca com os livros mais recentes. Nosso objetivo é facilitar o fornecimento e a disponibilidade de livros para nossos leitores e alunos. Vamos tornar o conhecimento e a educação gratuitos e facilmente acessíveis a todos.</h4>
     </div>
   </div>
   </div>
   <!-- books -->
-  <h2 align="center" style="margin: 10px; color:#0297e0; margin-top:3%; margin-bottom:3%;"><strong><u>Books</u></strong></h2>
+  <h2 align="center" style="margin: 10px; color:#0297e0; margin-top:3%; margin-bottom:3%;"><strong><u>Livros</u></strong></h2>
 
 
   <!-- book carousel -->

@@ -50,9 +50,10 @@ session_start();
 						<th>Size</th>
 						<th>Language</th>
 						<th>Description</th>
-						<th>Author</th>
-						<th>Publish Year</th>
-						<th>Image</th>
+						<th>Autor</th>
+						<th>Ano de publicação</th>
+						<th>Arquivo da obra</th>
+						<th>CapaArquivo</th>
 						<th>CategoryID</th>
 
 						<th></th>
@@ -73,11 +74,13 @@ session_start();
 								<td><?php echo $row['bookShortDesc']; ?></td>
 								<td><?php echo $row['bookAuthor']; ?></td>
 								<td><?php echo $row['bookPublishyear']; ?></td>
+								<td>  <a href="<?php echo $row['bookPdf']; ?>" download>Baixar</a></td>
 								<td><img style="height: 200px; width:150px" src="<?php echo $row["bookImage"] ?>" alt="Image not found"></td>
 								<td><?php echo $row['bookCategoryId']; ?></td>
 								<td>
 									<a href="AdminUpdateBook.php?id=<?php echo $row['bookId']; ?>" class="btn btn-success">Edit</a>
-									<a href="AdminDeleteBook.php?id=<?php echo $row['bookId']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure to delete this record?')">Delete</a>
+									<a href="AdminDeleteBook.php?id=<?php echo $row['bookId']; ?>" class="btn btn-danger" onclick="return confirm('Você confirma que deseja apagar esse livro da base?')">Apagar</a>
+									
 								</td>
 							</tr>
 						<?php

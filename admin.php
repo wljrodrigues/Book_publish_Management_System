@@ -5,7 +5,7 @@ if(isset($_SESSION['email']))
 {
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -34,16 +34,16 @@ if(isset($_SESSION['email']))
                 <li class="active">
 
                     <center class="admin">
-                        Welcome <?php echo $_SESSION['name']; ?>
+                        Bem vindo <?php echo $_SESSION['name']; ?>
                     </center>
 
                 </li>
 
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Users</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Usuários</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li><a href="AddUsers.php">Add User</a></li>
-                        <li><a href="AdminManageUser.php">Manage Users</a></li>
+                        <li><a href="AddUsers.php">Add Usuários</a></li>
+                        <li><a href="AdminManageUser.php">Gerenciar Usuários</a></li>
 
                     </ul>
                 </li>
@@ -52,10 +52,10 @@ if(isset($_SESSION['email']))
 
 
                 <li class="active">
-                    <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">Books</a>
+                    <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">Livros</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu2">
-                        <li><a href="Addbook.php">Add Book</a></li>
-                        <li><a href="AdminManageBook.php">Manage Book</a></li>
+                        <li><a href="Addbook.php">Add Livro</a></li>
+                        <li><a href="AdminManageBook.php">Gerenciar Livros</a></li>
 
                     </ul>
                 </li>
@@ -66,8 +66,8 @@ if(isset($_SESSION['email']))
                 <li class="active">
                     <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false">Author Proposals</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu3">
-                        <li><a href="AddProposal.php">Add Author Proposal</a></li>
-                        <li><a href="AdminManageProposal.php">Manage Author Proposals</a></li>
+                        <li><a href="AddProposal.php">Add Propostas</a></li>
+                        <li><a href="AdminManageProposal.php">Gerenciar Propostas</a></li>
 
                     </ul>
                 </li>
@@ -76,23 +76,23 @@ if(isset($_SESSION['email']))
 
 
                 <li class="active">
-                    <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false">Events</a>
+                    <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false">Eventos</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu4">
-                        <li><a href="AddEvent.php">Add Event</a></li>
-                        <li><a href="AdminManageEvent.php">Manage Events</a></li>
+                        <li><a href="AddEvent.php">Add Evento</a></li>
+                        <li><a href="AdminManageEvent.php">Gerenciar Eventos</a></li>
 
                     </ul>
                 </li>
 
                 <li class="active">
-                    <a href="#homeSubmenu5" data-toggle="collapse" aria-expanded="false">Contact Us Reports</a>
+                    <a href="#homeSubmenu5" data-toggle="collapse" aria-expanded="false">Mensagens</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu5">
-                        <li><a href="AdminManageContactus.php">Manage Contact Us</a></li>
+                        <li><a href="AdminManageContactus.php">Gerenciar Mensagens</a></li>
 
                     </ul>
                 </li>
                 <li class="active">
-                    <a href="logout.php">Log Out</a>
+                    <a href="logout.php">Sair...</a>
                 </li>
 
             </ul>
